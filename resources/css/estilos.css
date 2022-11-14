@@ -1,12 +1,96 @@
+
+/*css responsive  para pantallas inferioes a 720*/
+
+/*css reset */
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+/**Fuentes/*/
+h1{font-size: 3em;}
+h2{font-size: 2em;}
+h3{font-size: 1.7em;}
+p{font-size: 1.25em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    background-color: rgb(101, 12, 184);
+}
+
 /*header*/
 header{
-    background-color: aqua;
+    background-color: rgb(245, 245, 245);
+  /*  position: fixed;
+    width: 100%;*/
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header a{
+    text-decoration: none;
+    padding: 3px 12px;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+header .logo{
+    padding-top: 15px;
+    font-weight: bold;
+    color: blueviolet;
 }
 
 /*banner*/
 .banner{
-    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    height: 75vh;/*le damos al contenedor el 80% de la pagina*/
+    background-image: linear-gradient(/*oscurecer nueatro banner para que resalte el texto*/
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(../images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    ;
 }
+.banner h1{color: rgb(206, 197, 197);}
+
 
 /*seccion 1*/
 .nuestros_restaurantes{
