@@ -213,5 +213,14 @@ footer p{
         justify-content: center;
     }
 
+       .nuestros_restaurantes .restaurantes_tematicos1, .restaurantes_tematicos2, .restaurantes_tematicos3, .restaurantes_tematicos4{
+           /* padding: 50px;*/ /*daña la configuracion*/
+           
+           background-size: 100% 150px;
+           background-repeat: no-repeat;
+           background-position-y: 0;
+           background-color: rgba(50, 50, 50, 1);
+           box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
 }
 
