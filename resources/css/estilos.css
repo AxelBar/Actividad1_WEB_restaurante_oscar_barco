@@ -37,7 +37,7 @@ button:hover{
 
 /*header*/
 header{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(230, 230, 230);
     }
 header .container{
     display: flex;
@@ -91,13 +91,19 @@ header .logo{
 }
 .banner button{
     font-size: 1.75em;
+    margin-top: 250px;
 }
 
 
 
 /*seccion 1*/
+/*.nuestros_restaurantes button{  no puedo centrar
+    align-items: center;
+    justify-content: center;
+}*/
+
 .nuestros_restaurantes{
-   text-align: justify;
+   text-align: center;
    background-color: rgb(30, 30, 30);
    color: white;
 }
@@ -112,7 +118,7 @@ header .logo{
     color:rgb(206, 197, 197)
 }
 
-.nuestros_restaurantes .restaurantes_tematicos1, .restaurantes_tematicos2, .restaurantes_tematicos3{
+.nuestros_restaurantes .restaurantes_tematicos1, .restaurantes_tematicos2, .restaurantes_tematicos3, .restaurantes_tematicos4{
     padding: 25px 0px;
     margin: 10px;
     border-radius: 15px;
@@ -153,19 +159,59 @@ header .logo{
         url(../images/r_tematico4.jpg); 
         padding: 15px;   
 }
-.nuestros_restaurantes button{
-    align-items: center;
-    
+.nuestros_restaurantes button{/*me falta centrar los bootmnes*/
+    align-items: center;  
 }
 
 
+/*footer*/
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer .container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+}
+footer p{
+    margin: 0px;
+    color: rgb(100,100,100);
+    padding: 20px;
+}
 
+/*diseñamos css para gainas grandes*/
+@media(min-width: 720px){
 
+    header{
+        position: fixed;/*para que se mantenga cuando se baje la pantalla*/
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 20px;
+    }
 
+    .banner h1{
+        padding-top: 50px;
+        font-size: 4.5em;
+    }
 
+    .nuestros_restaurantes p{
+        margin-bottom: 30px;
+    }
 
+    .nuestros_restaurantes .restaurantes{
+        display: flex;
+        justify-content: center;
+    }
 
-/*
-position: fixed;
-    width: 50%;*/
+}
+
