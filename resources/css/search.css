@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-image: url(../images/abstract-luxury-light-cream-beige-brown-like-cotton-silk-texture-pattern-background.jpg);
+}
+
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 80px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
