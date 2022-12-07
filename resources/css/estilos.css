@@ -1,5 +1,5 @@
 
-/*css responsive  para pantallas inferioes a 720*/
+/*css responsive  para pantallas inferiores a 720*/
 
 /*css reset */
 *{
@@ -25,13 +25,27 @@ button{
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.button{/*para los botones  de new y search que estan en modo clase*/
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
     color: white;
     background-color: blueviolet;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 button:hover{
+    background-color: rgb(101, 12, 184);
+}
+.button:hover{
     background-color: rgb(101, 12, 184);
 }
 
@@ -95,13 +109,6 @@ header .logo{
 }
 
 
-
-/*seccion 1*/
-/*.nuestros_restaurantes button{  no puedo centrar
-    align-items: center;
-    justify-content: center;
-}*/
-
 .nuestros_restaurantes{
    text-align: center;
    background-color: rgb(30, 30, 30);
@@ -132,8 +139,7 @@ header .logo{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
         url(../images/r_tematico1.jpg);
-        padding: 15px;
-    
+        padding: 15px;    
 }
 .nuestros_restaurantes .restaurantes_tematicos2{
     background-image: linear-gradient(
@@ -160,7 +166,8 @@ header .logo{
         padding: 15px;   
 }
 .nuestros_restaurantes button{/*me falta centrar los bootmnes*/
-    align-items: center;  
+    align-items:flex-end;  
+    
 }
 
 
@@ -180,7 +187,7 @@ footer p{
     padding: 20px;
 }
 
-/*diseñamos css para gainas grandes*/
+/*diseñamos css para paginas grandes*/
 @media(min-width: 720px){
 
     header{
@@ -210,7 +217,7 @@ footer p{
 
     .nuestros_restaurantes .restaurantes{
         display: flex;
-        justify-content: center;
+        justify-content:center;
     }
 
        .nuestros_restaurantes .restaurantes_tematicos1, .restaurantes_tematicos2, .restaurantes_tematicos3, .restaurantes_tematicos4{
